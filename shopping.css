@@ -1,0 +1,155 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   width: 100%;
+   height: 100%;
+   background-color: burlywood;
+
+   background-image: url(img/bg.jpg);
+   background-size: cover;
+}
+
+nav{
+   width: 100%;
+   height: 90px;
+   background-color: black;
+
+   display: flex;
+}
+
+p{
+   width: 800px;
+   height: 90px;
+   color: white;
+   /*background-color: red;*/
+   font-size: 3rem;
+   letter-spacing: 1px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.fa-eye{
+   font-size: 2rem;
+   color: white;
+   /*background-color: yellow;*/
+   width: 50px;
+   height: 50px;
+}
+
+nav ul{
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+}
+
+nav ul li{
+   list-style: none;
+   color: #d9a821;
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: #d1c73b;
+   font-size: 2.5rem;
+   transition: all 0.3s;
+}
+
+nav ul li a:hover{
+     color: skyblue;
+}
+
+h2{
+   font-size: 4rem;
+   color: snow;
+   text-align: center;
+
+   margin-top: 40px;
+   letter-spacing: 1px;
+}
+
+.fa-sleigh{
+   font-size: 4rem;
+   color: red;
+}
+
+section{
+   width: 100%;
+   height: 500px;
+  /* background-color: burlywood;*/
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 100px;
+}
+
+.pic{
+   width: 500px;
+   height: 500px;
+  /* background-color:steelblue;*/
+   border-radius: 60px;
+   box-shadow: 5px 5px 10px 1px rgba(29,173,46,0.98);
+   transition: all 0.3s;
+}
+
+.pic:hover{
+   box-shadow: 6px 6px 5px 0px rgba(31,137,196,0.75);
+}
+
+.pic img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 60px;
+}
+
+.home .pic p{
+   width: 500px;
+   height: 100px;
+   /*background-color: burlywood;*/
+   font-size: 3rem;
+   color: #d1c73b;
+   margin-right: 20px;
+}
+
+.words{
+   width: 700px;
+   height: 370px;
+   /*background-color: red;*/
+} 
+
+.words ul li{
+   font-size: 2rem;
+   color: #d1c73b;
+   letter-spacing: 1px;
+
+   margin-top: 30px;
+}
+
+.fa-ghost{
+   color: #fff;
+   font-size: 2rem;
+}
+
+.fa-tv{
+   color: #0f81d9;
+   font-size: 2rem;
+}
+
+.fa-gift{
+   color: #d90f2d;
+   font-size: 2rem;
+}
+
+.fa-gamepad{
+   color: #6123cc;
+   font-size: 2rem;
+}

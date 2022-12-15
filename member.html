@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BecomeMember</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+      
+      body{
+      	background-image: url(img/bg.jpg);
+      	background-size: cover;
+      	background-repeat: no-repeat;
+      	height: 100vh;
+      }
+      
+      nav{
+      	width: 100%;
+      	height: 100px;
+      	background-color: black;
+         text-align: center;
+         letter-spacing: 1px;
+
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+      }
+       li{
+          list-style: none;
+          font-size: 2.5rem;
+          color:white;
+          letter-spacing: 2px;
+       }
+
+       .fa-eye{
+       	width: 100px;
+       	height: 50px;
+       	color: white;
+       	font-size: 3rem;
+       	border-right: 1px solid white;
+       	border-left: 1px solid white;
+       }
+       
+       section{
+       	width: 100%;
+       	height:600px;
+       	/*background-color: red*/;
+       	display: flex;
+       	justify-content: center;
+       	align-items: center;
+       }
+
+      .signup{
+      	background-color: black;
+         border-radius: 50px;
+         box-shadow: 5px 5px 10px 1px rgba(29,173,46,0.98);
+
+			display: flex;
+			flex-direction: column;
+			margin-left: 80px;
+			margin-bottom: 200px;
+		}
+
+		.signup h1{
+			font-size: 2rem;
+
+			letter-spacing: 1px;
+			margin: 70px 0px;
+		}
+		.signup div{
+			width: 400px;
+			height: 430px;
+			border-radius: 30px;
+			font-size: 1.1rem;
+		}
+
+		.signup div form{
+            margin: 0px 15px;
+		}
+		
+		td {
+			padding: 10px;
+		}
+		table {
+			margin-top: 35px;
+			margin-left: 20px;
+		}
+
+		label{
+			color: #d1c73b;
+		}
+        
+      input{
+        	border-width: 0;
+        	background: white;
+      }
+
+      select{
+        	border-width: 0;
+        	background: white;
+      }
+
+		#sumit{
+			padding: 7px 40px;
+		}
+
+		.member{
+			width: 300px;
+			height: 90px;
+			background-color: black;
+			border-radius: 40px;
+			box-shadow: 5px 5px 10px 1px rgba(29,173,46,0.98);
+
+			margin-left: 100px;
+		}
+
+		.member:hover{
+			box-shadow: 6px 6px 5px 0px rgba(31,137,196,0.75);
+		}
+      
+      a{
+			color: black;
+			text-align: center;
+			text-decoration: none;
+
+			margin-bottom: 200px;
+      }
+
+      a .member p{
+      	color: #d1c73b;
+      	font-size: 2rem;
+      	padding-top: 30px;
+      }
+
+     .fa-arrow-left{
+	      font-size: 3rem;
+	      color: white;
+      }
+      
+      .bottom{
+      	width: 100%;
+      	height: 180px;
+      	background-color: black;
+
+      	display: flex;
+      	justify-content: space-around;
+      	align-items: center;
+      }
+
+      .fa-twitter{
+      	font-size: 4rem;
+      	color: white;
+      }
+
+      .fa-twitter:hover{
+      	box-shadow: 1px -1px 9px 6px rgba(85,195,209,0.75);
+      }
+
+      .fa-facebook{
+      	font-size: 4rem;
+      	color: white;
+      }
+
+      .fa-facebook:hover{
+           box-shadow: 1px -1px 9px 6px rgba(10,82,214,0.75);
+      }
+
+       .fa-instagram{
+          font-size: 4rem;
+      	 color: white;
+       }
+
+       .fa-instagram:hover{
+       	box-shadow: 1px -1px 9px 6px rgba(107,59,186,0.75)
+       }
+
+     .fa-youtube{
+         font-size: 4rem;
+      	color: white;
+     }
+
+     .fa-youtube:hover{
+     	box-shadow: 1px -1px 9px 6px rgba(214,40,62,0.75);
+     }
+     
+     .fa-discord{
+         font-size: 4rem;
+      	color: white;
+     }
+
+     .fa-discord:hover{
+     	box-shadow: 1px -1px 9px 6px rgba(52,47,227,0.75);
+     }
+
+	</style>
+
+</head>
+
+<body>
+   <nav>
+   	<i class="fa-solid fa-eye"></i>
+   	  <ul>
+   	  	 <li>We Warmly Welcome To Become One Of Them</li>
+   	  </ul>
+   	<i class="fa-solid fa-eye"></i>  
+   </nav>
+  <a href="os.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+ <section>
+ 	<div class="signup">
+    		<form action="" method="" enctype="multipart/form-data">
+
+           <table>
+		    	<tr>
+		    		<td><label for="first name">First Name</label></td>
+		    	   <td><input type="text" name="first name" id="first name" class="" placeholder="Enter your firstname"required /></td>
+		      </tr>
+		         
+		    	<tr>
+		    		<td><label for="last name">Last Name</label></td>
+		    	   <td><input type="text" name="last name" id="last name" class="" placeholder="Enter your lastname"required/></td>
+		    	</tr>
+                
+             <tr>
+               <td><label for="nickname">Nickname</label></td>
+		    	   <td><input type="text" name="nickname" id="nickname" class="" placeholder="Enter your nickname"required/></td>
+		    	</tr>
+
+		    	<tr>
+		    		<td><label for="date"> Birth Date</label></td>
+		    	   <td><input type="date" name="date" id="date" class="" required/></td>
+		    	</tr>
+
+		    	<tr>
+		    		<td><label for="phone">Phone</label></td>
+		    	   <td><input type="text" name="phone" id="phone" class="" placeholder="+959--" required/></td>
+		    	</tr>
+
+		    	<tr>
+		    		<td><label>Gender</label></td>
+		    	   <td><select name="gender" id="gender" class=""required>
+		    		<option disabled selected>Choose your gender</option>
+		    		<option value="mm">Male</option>
+		    		<option value="kk">Female</option>
+		    		<option value="tt">Other</option>
+				</select></td>
+			   </tr>
+			</table>
+			</form>
+			<br/><br/>
+        </div>
+
+        <a href="memeberdetails.html">
+        	<div class="member">
+  	        <p>Become One Of Them</p>
+        </div>
+       </a>
+</section>
+
+<div class="bottom">
+	<i class="fa-brands fa-twitter"></i>
+	<i class="fa-brands fa-facebook"></i>
+	<i class="fa-brands fa-instagram"></i>
+	<i class="fa-brands fa-youtube"></i>
+	<i class="fa-brands fa-discord"></i>
+</div>
+
+</body>
+</html>

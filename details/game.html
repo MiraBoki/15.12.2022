@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style type="text/css">
+     *{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   width: 100%;
+   height: 100%;
+   /*background-color: burlywood;*/
+
+   background-image: url(../img/game/gamingbg.jpg);
+   background-size: cover;
+}
+
+nav{
+   width: 100%;
+   height: 90px;
+   background-color: black;
+
+   display: flex;
+}
+
+p{
+   width: 800px;
+   height: 90px;
+   color: white;
+   /*background-color: red;*/
+   font-size: 3rem;
+   letter-spacing: 1px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.fa-eye{
+   font-size: 2rem;
+   color: white;
+   /*background-color: yellow;*/
+   width: 50px;
+   height: 50px;
+}
+
+nav ul{
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+}
+
+nav ul li{
+   list-style: none;
+   color: #d9a821;
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: #d1c73b;
+   font-size: 2.5rem;
+   transition: all 0.3s;
+}
+
+nav ul li a:hover{
+     color: skyblue;
+}
+
+.fa-arrow-left{
+     font-size: 3rem;
+     color: white;
+}
+
+.firstrow{
+   width: 100%;
+   height: 400px;
+  /* background-color: blueviolet;*/
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.one{
+   width: 45%;
+   height: 100%;
+   /*background-color: darkred;*/
+   border-radius: 50px;
+   box-shadow: -7px -7px 5px 0px rgba(20,108,212,0.75);
+
+   display: flex;
+}
+
+.two{
+   width: 45%;
+   height: 100%;
+  /* background-color: burlywood;*/
+   border-radius: 50px;
+   box-shadow: 6px -7px 5px 0px rgba(20,108,212,0.75);
+   display: flex;
+}
+
+.firstrow .img{
+   width: 45%;
+   height: 400px;
+   border-radius: 50px;
+}
+
+.firstrow .img img{
+   width: 350px;
+   height: 380px;
+   border-radius: 50px;
+   object-fit: cover;
+
+   margin-left: 20px;
+}
+
+.img img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.about{
+   width: 55%;
+   height: 400px;
+  /* background-color: orangered;*/
+
+   display: flex;
+   justify-content: space-around;
+   align-items: left;
+   flex-direction: column;
+}
+
+.size{
+      display: inline-flex;
+      overflow: hidden;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+      height: 40px;
+      width: 230px;
+      }
+
+.size .input{
+           display: none;  
+      }
+
+.size .name{
+         padding: 8px 30px;
+         font-size: 1.2rem;
+         color: #510863;
+;
+         background-color: white;
+         cursor: pointer;
+         transition: background 0.2s;
+      }
+
+.size .input:checked + .name{
+         background-color:#000;
+         color: white;
+      }
+
+.quantity input{
+   width:80px;
+   height: 30px;
+}
+
+.buy{
+      width: 200px;
+      height: 60px;
+      background-color: black;
+      border-radius: 40px;
+      box-shadow: 1px -1px 9px 6px rgba(212,143,10,0.75);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.buy:hover{
+   box-shadow: 6px 6px 5px 0px rgba(31,137,196,0.75);
+}
+
+.buy a{
+   text-decoration: none;
+   color: #d1c73b;
+   font-size: 1.4rem;
+}
+
+.secondrow{
+   width: 100%;
+   height: 400px;
+  /* background-color: blueviolet;*/
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 40px;
+}
+
+.secondrow .img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   /*background-color: yellow;*/
+}
+
+.secondrow .one{
+   width: 45%;
+   height: 100%;
+   /*background-color: darkred;*/
+   border-radius: 50px;
+   box-shadow: -7px 1px 5px 0px rgba(20,108,212,0.75);
+
+   display: flex;
+}
+
+.secondrow .two{
+   width: 45%;
+   height: 100%;
+  /* background-color: burlywood;*/
+   border-radius: 50px;
+   box-shadow: 6px 1px 5px 0px rgba(20,108,212,0.75);
+   display: flex;
+}
+
+.thirdrow{
+   width: 100%;
+   height: 400px;
+  /* background-color: blueviolet;*/
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 40px;
+}
+
+.thirdrow .img{
+   width: 500px;
+   height: 380px;
+}
+
+.thirdrow .img img{
+     width: 500px;
+     height: 380px;
+     object-fit: contain;
+}
+
+.thirdrow .one{
+   width: 45%;
+   height: 100%;
+   /*background-color: darkred;*/
+   border-radius: 50px;
+   box-shadow: -7px 8px 5px 0px rgba(20,108,212,0.75);
+
+   display: flex;
+}
+
+.thirdrow .two{
+   width: 45%;
+   height: 100%;
+   /*background-color: darkred;*/
+   border-radius: 50px;
+   box-shadow: 7px 8px 5px 0px rgba(20,108,212,0.75);
+
+   display: flex;
+}
+
+.price h2{
+      width: 200px;
+      height: 60px;
+      background-color: black;
+      border-radius: 40px;
+      box-shadow: 1px -1px 9px 6px rgba(212,143,10,0.75);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+h2{
+   color: #d1c73b;
+}
+
+.fa-ghost{
+   color: #fff;
+   font-size: 2rem;
+}
+
+.fa-tv{
+   color: #0f81d9;
+   font-size: 2rem;
+}
+
+.fa-gift{
+   color: #d90f2d;
+   font-size: 2rem;
+}
+
+.fa-gamepad{
+   color: #6123cc;
+   font-size: 2rem;
+}
+
+  </style>
+
+</head>
+
+<body>
+   <nav>
+     <ul>
+     	 <li><a href="anime.html">Anime</a></li><i class="fa-solid fa-tv"></i>
+       <li><a href="halloween.html">Halloween</a></li><i class="fa-solid fa-ghost"></i>
+       <li><a href="christmas.html">Christmas</a></li><i class="fa-solid fa-gift"></i>
+       <li><a href="game.html">Game</a></li><i class="fa-solid fa-gamepad"></i>
+       <li><a href="others.html">Others</a></li>
+     </ul>
+   </nav>
+<a href="../os.html">
+   <i class="fa-sharp fa-solid fa-arrow-left"></i>
+</a>
+<section class="firstrow">
+   <div class="one">
+      <div class="img">
+         <img src="../img/game/ashe.jfif" alt="hd1" />
+      </div>
+      <div class="about">
+        <div class="size"> 
+         <input type="radio" name="size" id="sizem" class="input" value="1"/><label class="name" for="sizem">M</label>
+         <input type="radio" name="size" id="sizel" class="input" value="2" /><label class="name" for="sizel">L</label>
+         
+        </div>
+
+       <div class="quantity">
+          <input type="number" name="quantity" id="quantity" class="" min="1" max="30" />
+       </div>
+
+       <div class="price"><h2>19.99$</h2></div>
+       <div class="buy">
+         <a href="#">Add To Your Cart</a>
+       </div>
+      </div>
+   </div>
+   <div class="two">
+      <div class="img">
+         <img src="../img/game/genji.jfif" alt="hd1" />
+      </div>
+      <div class="about">
+        <div class="size"> 
+         <input type="radio" name="size" id="sizem" class="input" value="1"/><label class="name" for="sizem">M</label>
+         <input type="radio" name="size" id="sizel" class="input" value="2" /><label class="name" for="sizel">L</label>
+        </div>
+
+       <div class="quantity">
+          <input type="number" name="quantity" id="quantity" class="" min="1" max="30" />
+       </div>
+
+       <div class="price"><h2>29.99$</h2></div>
+       <div class="buy">
+         <a href="#">Add To Your Cart</a>
+       </div>
+      </div>
+   </div>
+</section>
+
+<section class="secondrow">
+   <div class="one">
+      <div class="img">
+         <img src="../img/game/ruby.webp" alt="hd1" />
+      </div>
+      <div class="about">
+        <div class="size"> 
+         <input type="radio" name="size" id="sizem" class="input" value="1"/><label class="name" for="sizem">M</label>
+         <input type="radio" name="size" id="sizel" class="input" value="2" /><label class="name" for="sizel">L</label>
+        </div>
+
+       <div class="quantity">
+          <input type="number" name="quantity" id="quantity" class="" min="1" max="30" />
+       </div>
+
+       <div class="price"><h2>14.99$</h2></div>
+       <div class="buy">
+         <a href="#">Add To Your Cart</a>
+       </div>
+      </div>
+   </div>
+   <div class="two">
+      <div class="img">
+         <img src="../img/game/kaguya.jfif" alt="hd1" />
+      </div>
+      <div class="about">
+        <div class="size"> 
+         <input type="radio" name="size" id="sizem" class="input" value="1"/><label class="name" for="sizem">M</label>
+         <input type="radio" name="size" id="sizel" class="input" value="2" /><label class="name" for="sizel">L</label>
+        </div>
+
+       <div class="quantity">
+          <input type="number" name="quantity" id="quantity" class="" min="1" max="30" />
+       </div>
+
+       <div class="price"><h2>14.99$</h2></div>
+       <div class="buy">
+         <a href="#">Add To Your Cart</a>
+       </div>
+      </div>
+   </div>
+</section>
+
+<section class="thirdrow">
+   <div class="one">
+      <div class="img">
+         <img src="../img/game/chamber.jpg" alt="hd1" />
+      </div>
+      <div class="about">
+        <div class="size"> 
+         <input type="radio" name="size" id="sizem" class="input" value="1"/><label class="name" for="sizem">M</label>
+         <input type="radio" name="size" id="sizel" class="input" value="2" /><label class="name" for="sizel">L</label>
+        </div>
+       <div class="quantity">
+          <input type="number" name="quantity" id="quantity" class="" min="1" max="30" />
+       </div>
+
+       <div class="price"><h2>19.99$</h2></div>
+       <div class="buy">
+         <a href="#">Add To Your Cart</a>
+       </div>
+      </div>
+   </div>
+   <div class="two">
+      <div class="img">
+         <img src="../img/game/jett.jfif" alt="hd1" />
+      </div>
+      <div class="about">
+        <div class="size"> 
+          <input type="radio" name="size" id="sizem" class="input" value="1"/><label class="name" for="sizem">M</label>
+          <input type="radio" name="size" id="sizel" class="input" value="2" /><label class="name" for="sizel">L</label>
+        </div>
+       <div class="quantity">
+          <input type="number" name="quantity" id="quantity" class="" min="1" max="30" />
+       </div>
+
+       <div class="price"><h2>14.99$</h2></div>
+       <div class="buy">
+         <a href="#">Add To Your Cart</a>
+       </div>
+      </div>
+   </div>
+</section>
+</body>
+
+</html>
